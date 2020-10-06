@@ -106,7 +106,10 @@ export default {
             })
             get(url,params);
           }else{
-            Dialog({ message: '您的余额不足,请充值' });
+            Dialog({ message: '您的余额不足,请充值' })
+            .then(()=>{
+              this.$router.push("/manager/money")
+            })
           }
           
         })
