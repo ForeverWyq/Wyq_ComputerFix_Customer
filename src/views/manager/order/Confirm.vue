@@ -71,7 +71,7 @@ export default {
             // 初始化订单项(将我们的产品放入购物车)
             let orderLine ={
                 number:this.number,
-                price:this.$route.query.price * this.number,
+                price:this.$route.query.price,
                 productId:this.$route.query.id
             };
             this.orderLines.push(orderLine);
