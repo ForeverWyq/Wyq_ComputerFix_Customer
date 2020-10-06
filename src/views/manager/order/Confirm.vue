@@ -14,7 +14,7 @@
             <!-- <p>服务名称:{{$route.query.name}}</p>
             <p>服务简介:{{$route.query.description}}</p>
             <p>服务单价:¥{{$route.query.price}}</p> -->
-            <p>数量:<van-stepper :v-model=this.number :min="1" integer @change="numberChangeHandler" style="display: inline; padding-left:20px"/></p>
+            <p>数量:<van-stepper :v-model=this.number :min="1" :max="1000" integer @change="numberChangeHandler" style="display: inline; padding-left:20px"/></p>
             <p>小计: ¥{{$route.query.price * this.number}}</p>
         </div>
         </div>
