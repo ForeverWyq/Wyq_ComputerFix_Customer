@@ -5,6 +5,7 @@
         <van-dropdown-menu>
             <van-dropdown-item v-model="addressId" :options="options" />
         </van-dropdown-menu>
+        <br>
         订单详情:
         <van-card :num=this.number :price=$route.query.price :desc=$route.query.description
             :title=$route.query.name :thumb=$route.query.photo />
@@ -15,13 +16,11 @@
             <p>服务简介:{{$route.query.description}}</p>
             <p>服务单价:¥{{$route.query.price}}</p> -->
             <p>数量:<van-stepper :v-model=this.number :min="1" :max="1000" integer @change="numberChangeHandler" style="display: inline; padding-left:20px"/></p>
-            <p>小计: ¥{{$route.query.price * this.number}}</p>
+            <!-- <p>小计: ¥{{$route.query.price * this.number}}</p> -->
         </div>
         </div>
-        <div class="btn" @click="submitHandler()">提交订单</div>
-        <!-- <div style="position:fixed;botton:0;width:100%">
-            <van-button block type="primary" @click="submitHandler">提交订单</van-button>
-        </div> -->
+        <van-submit-bar :price="$route.query.price * this.number *100" button-text="提交订单" @submit="submitHandler()" />
+        <!-- <div class="btn" @click="submitHandler()">提交订单</div> -->
     </wyq-fulllayout>
 </template>
 <script>
