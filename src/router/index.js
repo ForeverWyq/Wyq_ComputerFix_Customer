@@ -13,6 +13,8 @@ import Register from '../views/Register'
 // import { Toast, AddressList} from 'vant'
 import { Toast } from 'vant'
 import store from '../store'
+// 个人信息
+import Information from '../views/manager/information/MyInformation'
 // 地址页面
 import AddressList from '../views/manager/address/List'
 import AddressAdd from '../views/manager/address/Add'
@@ -73,6 +75,10 @@ const routes = [
     {
       path: 'user',
       component: User,
+    },
+    {
+      path: 'information',
+      component: Information,
     },
     {
       path: 'money',

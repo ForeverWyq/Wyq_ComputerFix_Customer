@@ -52,5 +52,10 @@ export default {
       let response = await get('/customer/findCustomerById?id=' + id)
       commit('refreshCusInfoById',response.data)
     },
+    // 顾客
+    async UpdateCustomer({dispatch},params){
+      let reponse = await post('/customer/saveOrUpdate',params)
+      // dispatch('CustomerById',     这里加id  )
+    },
   }
 }

@@ -8,6 +8,7 @@
       </van-uploader>
       <div class="name">{{cusInfo.realname}}</div>
     </div>
+    <van-cell icon="user-o" title="我的资料" is-link to="information"/>
     <van-cell icon="balance-o" title="账户余额" :value="cusInfo.money" is-link to="money" />
     <van-cell icon="location-o" title="常用地址" is-link to="address"/>
     <van-cell icon="search" title="所有订单" is-link to="order" />
