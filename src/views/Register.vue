@@ -61,12 +61,20 @@ export default {
           this.$toast("真实姓名不能为空");
         }else if(data.telephone==null){
           this.$toast("手机号不能为空");
+        }else if(!this.checkPhone(data.telephone)){ 
+          this.$toast("手机号码有误，请重填");
         }else{
           post_obj_array(url,data).then((response)=>{
               this.$toast("注册成功");
               this.$router.go(-1);
           })
         }
+    },
+    checkPhone(phone){ 
+      if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(phone))){ 
+        return false; 
+      }
+      return true;
     }
   }
 }
