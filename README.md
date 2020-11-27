@@ -2,34 +2,32 @@
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+npm run build
 ```
 
 ### Run your tests
 ```
-yarn run test
+npm run test
 ```
 
 ### Lints and fixes files
 ```
-yarn run lint
+npm run lint
 ```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-<img src='http://134.175.154.93:8888/github/1.jpg' width=300 />
-<img src='http://134.175.154.93:8888/github/2.jpg' width=300/>
-<img src='http://134.175.154.93:8888/github/3.jpg' width=300/>
-<img src='http://134.175.154.93:8888/github/4.jpg' width=300/>
-<img src='http://134.175.154.93:8888/github/5.jpg' width=300/>
+<img src='http://223.4.183.62/ComputerFix/images/showimg/customer/1.jpg' width=300 />
+<img src='http://223.4.183.62/ComputerFix/images/showimg/customer/2.jpg' width=300/>
+<img src='http://223.4.183.62/ComputerFix/images/showimg/customer/3.jpg' width=300/>
